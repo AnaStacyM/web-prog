@@ -5,14 +5,14 @@
  */
 
 module.exports = (config, { strapi }) => {
-  // Add your own logic here.
   return async (ctx, next) => {
     if (
       ctx.request.method === "POST" &&
-      ctx.request.path.includes("device-data")
+      ctx.request.url.includes(
+        "content-manager/collection-types/api::devices-data.devices-data"
+      )
     ) {
-      // {"value":4214,"device":13}
-      const req = ctx.request.body.data;
+      const req = ctx.request.body.data || ctx.request.body;
       const device = await strapi.entityService.findOne(
         "api::device.device",
         +req.device,
@@ -27,7 +27,7 @@ module.exports = (config, { strapi }) => {
             async (alert) =>
               await strapi.entityService.create("api::alert.alert", {
                 data: {
-                  alert_condition: alert.id,
+                  alert_condition: alert,
                   value: req.value,
                 },
               })

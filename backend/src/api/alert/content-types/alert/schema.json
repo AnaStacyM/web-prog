@@ -19,7 +19,8 @@
       "inversedBy": "alerts"
     },
     "value": {
-      "type": "string"
+      "type": "float",
+      "required": true
     }
   }
 }
