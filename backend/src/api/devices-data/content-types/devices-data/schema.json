@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "device_data",
+  "info": {
+    "singularName": "devices-data",
+    "pluralName": "device-data",
+    "displayName": "Device Data"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "float"
+    },
+    "device": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::device.device",
+      "inversedBy": "device_data"
+    }
+  }
+}

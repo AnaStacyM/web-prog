@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alert_conditions",
+  "info": {
+    "singularName": "alert-condition",
+    "pluralName": "alert-conditions",
+    "displayName": "Alert Condition",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "float"
+    },
+    "message": {
+      "type": "string"
+    },
+    "alerts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alert.alert",
+      "mappedBy": "alert_condition"
+    },
+    "device": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::device.device",
+      "inversedBy": "alert_conditions"
+    },
+    "logic": {
+      "type": "string",
+      "regex": "[<>]{1}",
+      "required": true
+    }
+  }
+}

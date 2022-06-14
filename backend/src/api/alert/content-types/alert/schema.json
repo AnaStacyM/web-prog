@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alerts",
+  "info": {
+    "singularName": "alert",
+    "pluralName": "alerts",
+    "displayName": "Alert",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "alert_condition": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::alert-condition.alert-condition",
+      "inversedBy": "alerts"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

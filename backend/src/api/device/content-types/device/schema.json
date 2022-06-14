@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "devices",
+  "info": {
+    "singularName": "device",
+    "pluralName": "devices",
+    "displayName": "Device",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "co2",
+        "mitr",
+        "temp"
+      ]
+    },
+    "position_x": {
+      "type": "float"
+    },
+    "position_y": {
+      "type": "float"
+    },
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::room.room",
+      "inversedBy": "devices"
+    },
+    "device_data": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::devices-data.devices-data",
+      "mappedBy": "device"
+    },
+    "alert_conditions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alert-condition.alert-condition",
+      "mappedBy": "device"
+    }
+  }
+}

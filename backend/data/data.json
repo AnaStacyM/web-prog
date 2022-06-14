@@ -1,0 +1,122 @@
+[
+  {
+    "name": "POIC_1",
+    "building_plan": "POIC_1.png",
+    "devices": [
+      {
+        "name": "POIC_1_co2",
+        "type": "co2",
+        "position_x": 10,
+        "position_y": 10
+      },
+      {
+        "name": "POIC_1_mitr",
+        "type": "mitr",
+        "position_x": 610,
+        "position_y": 20
+      },
+      {
+        "name": "POIC_1_temp",
+        "type": "temp",
+        "position_x": 564,
+        "position_y": 340
+      }
+    ]
+  },
+  {
+    "name": "POIC_2",
+    "building_plan": "POIC_2.png",
+    "devices": [
+      {
+        "name": "POIC_2_co2",
+        "type": "co2",
+        "position_x": 10,
+        "position_y": 10
+      },
+      {
+        "name": "POIC_2_mitr",
+        "type": "mitr",
+        "position_x": 610,
+        "position_y": 20
+      },
+      {
+        "name": "POIC_2_temp",
+        "type": "temp",
+        "position_x": 564,
+        "position_y": 340
+      }
+    ]
+  },
+  {
+    "name": "POIC_3",
+    "building_plan": "POIC_3.png",
+    "devices": [
+      {
+        "name": "POIC_3_co2",
+        "type": "co2",
+        "position_x": 10,
+        "position_y": 10
+      },
+      {
+        "name": "POIC_3_mitr",
+        "type": "mitr",
+        "position_x": 610,
+        "position_y": 20
+      },
+      {
+        "name": "POIC_3_temp",
+        "type": "temp",
+        "position_x": 564,
+        "position_y": 340
+      }
+    ]
+  },
+  {
+    "name": "POIC_4",
+    "building_plan": "POIC_4.png",
+    "devices": [
+      {
+        "name": "POIC_4_co2",
+        "type": "co2",
+        "position_x": 10,
+        "position_y": 10
+      },
+      {
+        "name": "POIC_4_mitr",
+        "type": "mitr",
+        "position_x": 610,
+        "position_y": 20
+      },
+      {
+        "name": "POIC_4_temp",
+        "type": "temp",
+        "position_x": 564,
+        "position_y": 340
+      }
+    ]
+  },
+    {
+    "name": "POIC_5",
+    "building_plan": "POIC_5.png",
+    "devices": [
+      {
+        "name": "POIC_5_co2",
+        "type": "co2",
+        "position_x": 10,
+        "position_y": 10
+      },
+      {
+        "name": "POIC_5_mitr",
+        "type": "mitr",
+        "position_x": 610,
+        "position_y": 20
+      },
+      {
+        "name": "POIC_5_temp",
+        "type": "temp",
+        "position_x": 564,
+        "position_y": 340
+      }
+    ]
+  }
+]
