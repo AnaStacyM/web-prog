@@ -16,8 +16,8 @@ export const AlertsPage = () => {
         columns={[
           { title: "Id", field: "id" },
           { title: "Message", field: "attributes.alert_condition.data.attributes.message" },
-          { title: "Logic", field: "attributes.alert_condition.data.attributes.logic" },
           { title: "Except Value", field: "attributes.value" },
+          { title: "Logic", field: "attributes.alert_condition.data.attributes.logic" },
           { title: "Condition Value", field: "attributes.alert_condition.data.attributes.value" },
           { title: "Created", field: "attributes.createdAt", type: "datetime" },
         ]}
