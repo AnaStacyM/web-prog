@@ -4,16 +4,7 @@ import MaterialTable from "material-table";
 import { RoomApiService } from "../api/roomsApi.service";
 import { BASE_PATH } from "../constants/common.constants";
 import { useNavigate } from "react-router-dom";
-import { PatchedPagination } from "../components/PatchedPagination";
-import Navigation from "../components/Navigation";
-import { ThemeProvider, createTheme } from "@mui/material";
-const appTheme = createTheme({
-  palette: {
-    primary: {
-      main: "#e56339",
-    },
-  },
-});
+
 export const RoomsPage = () => {
   const [data, setData] = useState([]);
   const navigate = useNavigate();

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Grid from "@mui/material/Grid";
-import { useParams } from "react-router-dom";
 import { DateTimePicker } from "@material-ui/pickers";
 import {
   Button,
@@ -24,12 +23,8 @@ import {
 import { DeviceApiService } from "../api/deviceApi.service";
 import { RoomApiService } from "../api/roomsApi.service";
 import _ from "lodash";
-const plt = [
-  { date: moment(new Date()).subtract(1, "m").toDate(), value: 10 },
-  { date: moment(new Date()).subtract(1, "hours").toDate(), value: 90 },
-];
+
 export const ComparePage = () => {
-  const { id } = useParams();
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
   const [type, setType] = useState("co2");

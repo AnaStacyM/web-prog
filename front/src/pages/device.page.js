@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import { DateTimePicker } from "@material-ui/pickers";
 import {
   Button,
-  CircularProgress,
   FormControl,
   FormControlLabel,
   FormGroup,
@@ -26,10 +25,6 @@ import {
   Legend,
 } from "recharts";
 import { DeviceApiService } from "../api/deviceApi.service";
-const plt = [
-  { date: moment(new Date()).subtract(1, "m").toDate(), value: 10 },
-  { date: moment(new Date()).subtract(1, "hours").toDate(), value: 90 },
-];
 export const DevicePage = () => {
   const { id } = useParams();
   const [enableAverage, setEnableAverage] = useState(false);
